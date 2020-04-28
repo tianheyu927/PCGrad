@@ -5,16 +5,16 @@ This repository contains code for [Gradient Surgery for Multi-Task Learning](htt
 
 PCGrad is a form of gradient surgery that projects a task’s gradient onto the normal plane of the gradient of any other task that has a conflicting gradient, which achieves substantial gains in efficiency and performance on a range of supervised multi-task learning and multi-task reinforcement learning domains. Moreover, it is model-agnostic and can be combined with previously-proposed multitask architectures for enhanced performance.
 
+## Installation
+Clone this repo and copy `PCGrad_tf.py` to your codebase.
+
 ## Usage
 
 ```python
-optimizer = # e.g. tf.train.AdamOptimizer
+optimizer = PCGrad(tf.train.AdamOptimizer()) # wrap your favorite optimizer
 losses = # a list of per-task losses
 assert len(losses) == num_tasks
-optimizer = PCGrad(optimizer)
-grad_vars = optimizer.compute_gradients(losses, var_list=tf.trainable_variables())
-train_op = optimizer.apply_gradients(grads_and_vars)
-
+train_op = optimizer.minimize(losses)
 ```
 
 ## Experiments

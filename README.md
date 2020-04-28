@@ -27,7 +27,7 @@ NYUv2: [MTAN](https://github.com/lorenmt/mtan)
 
 MultiMNIST: [MultiObjectiveOptimization](https://github.com/intel-isl/MultiObjectiveOptimization)
 
-MT10/MT50/goal-conditioned pushing in [MetaWorld](https://meta-world.github.io/): [softlearning](https://github.com/rail-berkeley/softlearning) with modifications (per-task temperature and per-task replay buffers). We will release mofified multi-task softlearning code soon.
+MT10/MT50/goal-conditioned pushing in [MetaWorld](https://meta-world.github.io/): [softlearning](https://github.com/rail-berkeley/softlearning) with modifications (per-task temperature and per-task replay buffers). We will release modified multi-task softlearning code soon.
 
 
 ## Reference
